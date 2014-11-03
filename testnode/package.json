@@ -1,0 +1,10 @@
+{
+  "name": "docker-centos-testnode",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Node.js testnode on centos via docker",
+  "author": "patrick charles <patrick.charles@pc.foo>",
+  "dependencies": {
+    "express": "3.2.4"
+  }
+}
