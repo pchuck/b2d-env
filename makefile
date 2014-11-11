@@ -78,6 +78,15 @@ start_nginx:
 test_nginx:
 	wget $(DOCKER_IP)
 
+pull_mdbssl:
+	docker pull danhixon/ubuntu-mongodb-ssl
+
+start_mdbssl:
+	docker run --rm -i -t -p 27017:27017 danhixon/ubuntu-mongodb-ssl
+
+connect_mdbssl:
+	mongo --ssl $(DOCKER_IP):27017
+
 
 ### fully custom project/container
 ### (using custom embedded project 'testnode', to illustrate build/start process)
