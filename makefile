@@ -36,7 +36,8 @@ upgrade: stop download start
 
 # initialize local keys from host
 shellinit:
-	scripts/docker_init_sh.sh
+	echo "NOTE: run the following command directly in the shell.."
+	. scripts/docker_init_sh.sh
 
 # fetch the ip of the docker vm
 getip:
